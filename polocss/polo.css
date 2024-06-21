@@ -1,0 +1,158 @@
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+header {
+    padding: 27px 0 24px 0;
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff);
+    text-align: center;
+}
+#menu { padding: 22px 0 0 0; }
+#menu li {
+    font: .7em Tahoma, sans-serif;
+    color: #b7b7b7;
+    padding: 0 11px 8px 11px;
+}
+#menu li a {
+    display: block;
+    font: bold .9rem,sans-serif;
+    text-transform: uppercase;
+    color: #807c7c;
+}
+main {
+    background: #fff url('../poloimg/mainbg.jpg') repeat-x;
+    padding: 22px 0 0 0;
+}
+#colors{
+    height: 340px;
+    border: 1px solid #c6c6c6;
+    border-radius: 7px;
+    background: url('../poloimg/slide1.jpg') center/cover;
+}
+h1 {
+    font: bold 1.5em 'Georgia';
+    color: #000;
+    text-align: center;
+    padding: 1em;
+}
+h2 {
+    font: 1.3em Georgia;
+    color: #11719e;
+}
+h6 {
+    font: .8em Helvetica;
+    color: #8c8c8c;
+}
+h5 {
+    font: 1.1em Georgia;
+    padding: 0 0 6px 0;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #e5e5e5;
+}
+.rows { padding: 24px 0}
+.cols { padding: 12px }
+.cols img { 
+    width: 100%; 
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 6px;
+    background: #f3f3f3;
+    margin: 15px 0;
+}
+.cols p {
+    font: .6em/1.5 sans-serif;
+    color: #edb9b9;
+    text-align: justify;
+}
+.cols button {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 160px;
+    height: 30px;
+    font: .8em Helvetica;
+    padding: 8px 20px;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+}
+.btn1{
+    border-color: #d8d8d8;
+    color: #016999;
+    background: linear-gradient(to right, #e8e8e8, #f7f7f7, #e8e8e8, #eee);
+}
+button:hover { box-shadow: 0 0 10px rgb(179, 133, 133) }
+button span { float: right}
+#icons a {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+    color: #a79797;
+}
+.fa-square-rss:hover { color: orange!important }
+.fa-square-facebook:hover { color: darkblue!important }
+.fa-linkedin:hover { color: lightblue!important }
+.fa-square-youtube:hover { color: red!important }
+.fa-square-twitter:hover { color: aqua!important }
+.updates img{
+    display: inline-block;
+    width: 60px;
+    border: 2px solid rgb(192, 185, 185);
+    border-radius: 3px;
+    padding: 6px;
+    margin: 0 26px 0 0;
+}
+.subscribe{
+    background-color: #11719e;
+    color: white;
+    margin:0 0 20px 0 ;
+    float: left;
+}
+input{
+    display: block;
+    border: 1px solid gainsboro;
+    margin: 15px 15px 0 0;
+    padding: 10px;
+}
+textarea{
+    border: 1px solid gainsboro;
+    margin: 15px 15px 0 0;
+}
+footer{
+    height: 180px;
+    background-color: #444;
+    clear: both;
+}
+footer p{
+font: 1.2em sans-serif;
+color: #998e8e;
+padding: 8px;
+}
+
+
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+    header { text-align: initial; }
+    #menu { float: right }
+    #menu li { 
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+    }
+
+    .rows::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .cols {
+        width: 33.33%;
+        float: left;
+    }
+    .copy{
+        text-align: right;
+    }
+}
